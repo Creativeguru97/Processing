@@ -2,12 +2,13 @@ class Particle{
 
   float x,y;
   float r;
+ 
   
-  Particle(){
-    x=random(width);
-    y=random(height);
-    r=random(10,40);
-  }
+  //Particle(){
+  //  x=random(width);
+  //  y=random(height);
+  //  r=random(10,40);
+  // }
 
   Particle(float tempX, float tempY, float tempR){
     r=tempR;
