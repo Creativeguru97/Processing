@@ -6,10 +6,10 @@ void setup(){
 }
 
 void draw(){
-  //frameRate(30);
+  frameRate(30);
   background(50);
   
-float spacing=48;
+float spacing=30;
   
 float x=0;//State variable X 
 float y=0;//State variable y
