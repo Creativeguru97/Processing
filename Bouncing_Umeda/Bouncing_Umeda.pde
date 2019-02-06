@@ -1,14 +1,14 @@
 PImage BG;
 PImage bounce;
 
-float bounceX=random(0,width);
-float bounceY=random(0,height);
+int bounceX=int(random(0,width));
+int bounceY=int(random(0,height));
 
-float Xspeed=5; 
-float Yspeed=5;
+int Xspeed=5; 
+int Yspeed=5;
 
-float AddSpeedX=3;
-float AddSpeedY=3;
+int AddSpeedX=3;
+int AddSpeedY=3;
 
 boolean going=false; //Set Initial value to false
 
@@ -59,17 +59,19 @@ void moveUmeda(){
 void checkUmeda(){
    //Accelerate objectX
   if(bounceX>width-150){
+    bounceX=width-150;
     Xspeed=Xspeed*-1-AddSpeedX;
   }
- if(bounceX<0){
+  if(bounceX<0){
+    bounceX=0;
     Xspeed=Xspeed*-1+AddSpeedX;
   }
-  
-  
- if(bounceY>height-50){
+  if(bounceY>height-50){
+    bounceY=height-50;
     Yspeed=Yspeed*-1-AddSpeedY;
   }
- if(bounceY<0){
+  if(bounceY<0){
+    bounceY=0;
     Yspeed=Yspeed*-1+AddSpeedY;
   }
 }
