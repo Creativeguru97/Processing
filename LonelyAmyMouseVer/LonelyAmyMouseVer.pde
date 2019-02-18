@@ -15,7 +15,7 @@ void setup(){
   }
   PImage[] HeadTurn = new PImage[30];
   for(int i = 0; i < HeadTurn.length; i++){
-    HeadTurn[i] = loadImage("HeadTurn2/HeadTurn"+nf(i, 2)+".png");
+    HeadTurn[i] = loadImage("HeadTurn/HeadTurn"+nf(i, 2)+".png");
   }
   
   
