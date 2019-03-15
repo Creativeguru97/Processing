@@ -83,6 +83,6 @@ class BodyMove{
         frameSpeed = +d/120;
       }
     }
-    
+    println(index);
   }
 }
