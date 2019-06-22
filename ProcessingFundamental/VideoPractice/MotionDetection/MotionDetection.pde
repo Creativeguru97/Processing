@@ -60,6 +60,7 @@ void draw(){
       
       float d = distSq(r1,g1,b1,r2,g2,b2);
       
+      
       /*If threshold is bigger, we have to move more faster to show up
       Which means, less threshold, morse sensitive*/
       if(d > threshold*threshold){
