@@ -1,15 +1,19 @@
 void setup(){
-  size(640,360);
+  size(555,360);
 }
 
 void draw(){
-  background(0);
+  background(255, 0, 0);
   
   if (mouseX>200 || mouseX<100){
     background(0,50,0);
     fill(255,0,0);
-    rect(300,100,50,50);
+    stroke(255,255,255);
+    strokeWeight(10);
+    rect(300,100,100,50);
   }
 
 
 }
+
+//RGB(255, 255, 255)
