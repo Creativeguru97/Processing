@@ -3,6 +3,8 @@ Bubble[] bubbles = new Bubble[20];
 
 boolean going=false;
 
+
+
 void setup(){
   size(960,480);
   for(int i=0; i<bubbles.length; i++){

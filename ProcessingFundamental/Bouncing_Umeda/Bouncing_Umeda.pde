@@ -1,8 +1,8 @@
 PImage BG;
 PImage bounce;
 
-int bounceX=int(random(0,width));
-int bounceY=int(random(0,height));
+int bounceX;
+int bounceY;
 
 int Xspeed=5; 
 int Yspeed=5;
@@ -13,6 +13,8 @@ int AddSpeedY=3;
 boolean going=false; //Set Initial value to false
 
 void setup(){
+  bounceX=int(random(0,width));
+  bounceY=int(random(0,height));
   size(960,540);
   BG=loadImage("BG.png");
   bounce=loadImage("MyName.png");
